@@ -18,8 +18,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main row container" role="main">
-			
+		<section id="main" class="site-main main-accueil row container" role="main">
+			<h4>Forfaits vedettes</h4>
 			<?php $link = get_post_type_archive_link('forfait');
 			
 			?>
@@ -41,7 +41,11 @@ get_header(); ?>
 					}
 				endif;
 
-		?> 
+		?>
+		</section><!-- #main -->
+		<section id="article-recent" >
+			<div class="site-main row container" role="main">
+				<h4>Derniers articles</h4>
 				<?php
 				$args2 = array(
 					'post_type' => 'post',
@@ -57,7 +61,8 @@ get_header(); ?>
 				endif;
 	
 				?>
-		</main><!-- #main -->
+			</div>
+		</section><!-- #main -->
 	</div><!-- #primary -->
 
 <?php

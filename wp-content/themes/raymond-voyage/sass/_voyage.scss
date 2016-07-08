@@ -88,6 +88,44 @@ h4:after {
 
 } /* ----------------------------------------- Fin lignes grahiques  */
 
+/* ------------- 2. Lignes grahiques acceuil */
+.main-accueil{
+
+  h4 {
+    flex-grow: 1;
+}
+
+  h4:before {
+    flex-grow: 1;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: $color__lignes-titres;
+    position: relative;
+    top: 0.8rem;
+  }
+  h4:after {
+    flex-grow: 1;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: $color__lignes-titres;
+    position: relative;
+    top: 0.8rem;
+  }
+  h4:before {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  h4:after {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+
+  } /* ---------------------------------------- Fin lignes grahiques  */
+
+
+}
+
 h5{
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -204,6 +242,13 @@ li{
 
   }
 }
+#article-recent{
+  background-color: $color__background-body;
+  .row{
+    margin-bottom: 0;
+  }
+}
+
 
 .main-navigation ul li:hover > ul{
   left: -0.07rem;
