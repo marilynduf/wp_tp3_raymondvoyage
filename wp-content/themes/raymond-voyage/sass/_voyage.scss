@@ -1,0 +1,424 @@
+/* IMPORT ********************************************************/
+
+@import "variables-site/colors";
+@import "mixins/mixins-master";
+
+/* NOTES *********************************************************
+
+   1. lignes grahiques : ces éléments créent les lignes à la droite des titres.
+   2. J'ai éprouvé beaucoup de difficulté avec la compilation du sass qui ralenti de facon insensé mon travail. (des heures pour changer des détails!) j'attends de 10 à 15 secondes pour chaque changement effectué.
+
+/* STYLE GENERAL *************************************************/
+
+body {
+  background-color: $color__background-body;
+  font-family: 'Open sans';
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#masthead{
+  color: $color__text-header;
+  font-family: 'Montserrat';
+  font-size: 0.9rem;
+  padding-bottom: 5rem;
+}
+.article-accueil{
+  background-color: $color__background-body;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: $color__titre-page;
+  margin-top: 0; /* h2 : titre des pages */
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+h2:after {
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: $color__lignes-titres;
+  position: relative;
+  top: 1rem;
+}
+
+h2:after {
+  margin-left:10px;
+}
+
+
+h3{
+  font-size: 1.4rem;
+  margin-top: 0; /* h3 : titre des extraits de posts */
+  margin-bottom: 0.5rem;
+}
+
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: $color__titre-page;
+
+/* ------------- 1. Lignes grahiques (voir détails haut du document) */
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+h4:after {
+  flex-grow: 1;
+  max-width: 8rem;
+  height: 1px;
+  content: '\a0';
+  background-color: $color__lignes-titres;
+  position: relative;
+  top: 0.8rem;
+}
+
+h4:after {
+  margin-left:10px;
+
+} /* ----------------------------------------- Fin lignes grahiques  */
+
+h5{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.8);
+
+  span{
+    font-weight: bold;
+  }
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+li{
+  list-style-type: none;
+}
+/************* flex  **************/
+
+.flex{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.align-left{
+  justify-content: flex-end;
+}
+.float-right{
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.align-item-center{
+  align-items: center;
+}
+.justify-content{
+  justify-contents: center;
+}
+.column{
+  flex-direction: column;
+}
+
+  /* STYLE GESTIONS IMAGES *******************************************************/
+
+.crop-container{
+  height: 0;
+  padding-bottom: 66.66%;
+  overflow: hidden;
+}
+.crop-container-forfait-resume{
+  height: 0;
+  padding-bottom: 63%;
+  overflow: hidden;
+}
+
+/* STYLE HEADER ***************************************************************/
+
+
+#site-navigation{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#primary-menu{
+  float: right;
+  //text-align: right;
+  //align-items: center;
+}
+
+#site-navigation{
+  #primary-menu {
+    li{
+        background-color: #0a5664;
+        padding: 0.5rem 2rem;
+        transition: .2s;
+        &:hover{
+          background-color: darken(#0a5664, 8);
+        }
+      a{
+        color: $color__liens-head-foo-menu;
+      }
+      a:visited{
+        text-decoration: #fff;
+      }
+    }
+    > li{
+      border-left: solid #fff 0.1rem;
+      border-top: solid #fff 0.1rem;
+      border-bottom: solid #fff 0.1rem;
+    }
+    li:last-child{
+      border-right: solid #fff 0.1rem;
+    }
+  }
+  .sub-menu{
+    li {
+      border-left: solid #fff 0.1rem;
+      border-top: solid #fff 0.1rem;
+      border-right: solid #fff 0.1rem;
+    }
+    li:last-child {
+      border-bottom: solid #fff 0.1rem;
+    }
+
+  }
+}
+
+.main-navigation ul li:hover > ul{
+  left: -0.1rem;
+}
+.main-navigation ul ul{
+  top: 2.2rem;
+}
+.slogan{
+  padding-top: 10rem;
+  padding-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  max-width: 55rem;
+  color: #fff;
+  line-height: normal;
+}
+.lien-forfait{
+  padding-bottom: 10rem;
+}
+/********************************************************
+HEADER
+********************************************************/
+
+.home{
+  background: url(img/beach.jpg) no-repeat top;
+}
+
+/*******************************************************
+POST EXTRAITS
+********************************************************/
+
+.post-extrait{
+
+    background-color: #fff;
+    .date{
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      position: absolute;
+      max-width: 9rem;
+      padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5)
+    }
+    .text-post-extrait{
+      padding: 1rem 1.8rem 0 1.8rem;
+    }
+}
+.ligne{
+  border-top: solid $color__borders 0.1rem;
+  padding: 1.2rem;
+}
+
+.ligne-au-dessus{
+  border-top: solid $color__borders 0.1rem;
+}
+
+/*******************************************************
+LIENS
+********************************************************/
+.liens-post{
+  color: $color__icons-et-liens;
+  a{
+    color: $color__icons-et-liens;
+    transition: .2s;
+    &:hover{
+      color: darken($color__icons-et-liens, 20%); /* le hover ne marche pas sur le <a> mais il marche sur le i... pk? */
+    }
+
+  }
+  i{
+    color: $color__icons-et-liens;
+    padding-right: 0.5rem;
+    transition: .2s;
+    &:hover{
+      color: darken($color__icons-et-liens, 20%); /* le hover ne marche pas sur le <a> mais il marche sur le i... pk? */
+    }
+  }
+}
+
+/********************************************************
+FOOTER
+********************************************************/
+footer{
+  color: $color__text-footer;
+  margin-bottom: 0 !important; /* Une valeur par défault a une mention !important sur le margin du bottom. Je l'envève donc ici */
+  i{
+    color: $color__icon-footer;
+    padding-right: 1.2rem;
+  }
+}
+.background{
+  /* erreur comme s'il trouvait pas le chemin mais tout s'affiche quand meme... pk? pcq PHP storn ne "catch" pas mais c'est ok */
+  background: $color__background-footer url('img/terre.png') no-repeat center;
+}
+
+.nous-joindre{
+  a{
+    padding: 0.5rem 0.65rem;
+    margin-bottom: 1rem;
+    border: solid #fff 0.1rem;
+    color: $color__liens-head-foo-menu;
+  }
+}
+.credit{
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  span{
+    font-weight: bold;
+  }
+}
+/* FORFAITS *******************************************************/
+
+.info-forfait {
+  border-top: solid #ccc 0.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  width: 100%;
+  p {
+    -webkit-margin-before: 0em; // je ne suis pas capable d'affecter ce p... je ne trouve pas la provenance
+  }
+
+  i {
+    padding-right: 0.6rem;
+  }
+  .info-forfait-box {
+    border-right: solid #ccc 0.1rem;
+    padding-top: 0.6rem;
+  }
+  .info-forfait-box:first-child{
+    padding-left: 0;
+  }
+  .info-forfait-box:last-child{
+    border-right: 0;
+  }
+}
+
+/********************************************************
+SINGLE
+********************************************************/
+.mini-post{
+  img{
+    margin-bottom: 2rem;
+  }
+  .col{
+    padding-left: 0;
+  }
+  .mini-post-info {
+    background-color: $color__fond-carte;
+    .text-mini-post {
+      padding: 0.9rem 1.5rem 1.5rem 1.5rem;
+      p, span{
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: rgba(0,0,0,0.8)
+      }
+      p{
+        margin: 0 0 0.4rem 0;
+      }
+      span{
+        padding-bottom: 0.7rem;
+      }
+
+    }
+  }
+}
+.text-article{
+
+  .text-article-info{
+    background-color: $color__fond-carte;
+    padding: 1.5rem;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    h5{
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+.center {
+  text-align: center;
+}
+  a:visited{
+    color: $color__text-button-forfait;
+  }
+/* BUTTON **********************************************************/
+
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 1rem; // Pourquoi 1.5rem (qui = 24px) c'est immmmmense sur mon écran?
+  margin: 1rem auto 0;
+  text-align: center;
+  padding: 1rem 1.8rem;
+  min-height: 3.75rem;
+  max-width: 15rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  color: $color__text-button-forfait;
+
+}
+
+.button-forfait{
+  @include button-forfait($color__button-forfait);
+}
+/********************************************************
+Medias
+********************************************************/
+
+@media only screen and (min-width: 993px){
+
+  .container {
+    padding-left: 0;
+    width: 80%;
+  }
+}
