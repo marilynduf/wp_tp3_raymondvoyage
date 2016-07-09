@@ -13,7 +13,7 @@
         if ($transport == 'Autobus')
         { ?>
             <i class="fa fa-bus" aria-hidden="true"></i>
-            <?php the_field('transport');
+            <span>Par </span><?php the_field('transport');
         }
 
         // if Avion ---------------------------------------
@@ -29,7 +29,7 @@
         if ($transport == 'Train')
         { ?>
             <i class="fa fa-train" aria-hidden="true"></i>
-            <?php the_field('transport');
+            <span>Par </span><?php the_field('transport');
         } ?>
 
     </div>

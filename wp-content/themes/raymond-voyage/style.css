@@ -763,8 +763,7 @@ h4 {
   /* ------------- 1. Lignes grahiques (voir détails haut du document) */
   text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
+  flex-direction: row; }
 
 h4:after {
   flex-grow: 1;
@@ -780,30 +779,32 @@ h4:after {
 
 /* ----------------------------------------- Fin lignes grahiques  */
 /* ------------- 2. Lignes grahiques acceuil */
-.main-accueil {
+.site-main {
   /* ---------------------------------------- Fin lignes grahiques  */ }
-  .main-accueil h4 {
-    flex-grow: 1; }
-  .main-accueil h4:before {
+  .site-main h4 {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .site-main h4:before {
     flex-grow: 1;
-    width: 50%;
     height: 1px;
     content: '\a0';
     background-color: #fff;
     position: relative;
     top: 0.8rem; }
-  .main-accueil h4:after {
+  .site-main h4:after {
     flex-grow: 1;
-    width: 50%;
     height: 1px;
+    max-width: none;
     content: '\a0';
     background-color: #fff;
     position: relative;
     top: 0.8rem; }
-  .main-accueil h4:before {
+  .site-main h4:before {
     margin-left: 0.8rem;
     margin-right: 0.8rem; }
-  .main-accueil h4:after {
+  .site-main h4:after {
     margin-right: 0.8rem;
     margin-left: 0.8rem; }
 
@@ -853,17 +854,6 @@ li {
 
 .column {
   flex-direction: column; }
-
-/* STYLE GESTIONS IMAGES *******************************************************/
-.crop-container {
-  height: 0;
-  padding-bottom: 66.66%;
-  overflow: hidden; }
-
-.crop-container-forfait-resume {
-  height: 0;
-  padding-bottom: 63%;
-  overflow: hidden; }
 
 /* STYLE HEADER ***************************************************************/
 #site-navigation {
@@ -997,6 +987,19 @@ footer {
     font-weight: bold; }
 
 /* FORFAITS *******************************************************/
+.crop-container {
+  /* ------- Style gestion image forfait */
+  height: 0;
+  padding-bottom: 66.66%;
+  overflow: hidden; }
+
+.crop-container-forfait-resume {
+  height: 0;
+  padding-bottom: 63%;
+  overflow: hidden;
+  position: relative; }
+
+/* ------------------ Fin Style gestion image forfait */
 .info-forfait {
   border-top: solid #ccc 0.1rem;
   font-family: 'Montserrat', sans-serif;
@@ -1014,6 +1017,30 @@ footer {
     padding-left: 0; }
   .info-forfait .info-forfait-box:last-child {
     border-right: 0; }
+
+.img-forfait-resume {
+  background-color: rgba(0, 0, 0, 0.75); }
+  .img-forfait-resume :hover {
+    background: #fff; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s; }
+  .overlay .masque {
+    width: 100%;
+    height: 100%; }
+
+.overlay:hover {
+  opacity: 1; }
 
 /********************************************************
 SINGLE

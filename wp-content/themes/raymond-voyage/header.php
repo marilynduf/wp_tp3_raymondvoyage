@@ -26,49 +26,47 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'raymond-voyage' ); ?></a>
 
-	<header id="masthead" class="site-header flex clearfix container" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a></p>
-			<?php
-			endif;
+	<div id="page" class="site container">
+		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'raymond-voyage' ); ?></a>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-		<nav id="site-navigation" class="main-navigation valign-wrapper" role="navigation">
-			<button class="menu-toggle valign" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'raymond-voyage' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<header id="masthead" class="site-header clearfix" role="banner">
+			<div class="row flex">
+				<div class="site-branding">
+					<?php
+					if ( is_front_page() && is_home() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a></h1>
+					<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a></p>
+					<?php
+					endif;
 
+					$description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) : ?>
+						<p class="site-description"></p>
+					<?php
+					endif; ?>
+				</div><!-- .site-branding -->
+				<nav id="site-navigation" class="main-navigation valign-wrapper" role="navigation">
+				<button class="menu-toggle valign" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'raymond-voyage' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
+			</div>
+			<?php if ( is_front_page() ) : ?>
+			<div class="row flex align-item-center column ">
 
-	</header>
+				<div class="slogan row center">
+					<?php echo get_bloginfo('description'); ?>
+				</div>
 
-	<div class="row container flex align-item-center column ">
-		<?php if ( is_front_page() ) : ?>
-		<div class="slogan row center">
+				<div class="lien-forfait center row">
+					<?php $link = get_post_type_archive_link('forfait'); ?>
+					<a href="<?php echo $link ?>" class="btn button-forfait">Découvrez nos forfaits</a>
+				</div>
+			</div>
+			<?php endif ?>
 
-				<?php echo get_bloginfo('description'); ?>
-
-		</div>
-		
-		<div class="lien-forfait center row">
-
-			<a href="<?php echo $link ?>" class="btn button-forfait">Découvrez nos forfaits</a>
-		</div>
-		<?php endif ?>
+		</header>
 	</div>
 
-
-
-
-<div id="content" class="site-content">
+	<div id="content" class="site-content">

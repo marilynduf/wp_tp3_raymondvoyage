@@ -13,26 +13,27 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <div class="entry-content post-extrait">
+            <?php $linkSingle = esc_url( get_permalink() ); ?>
 
             <div class="crop-container-forfait-resume">
-                <?php the_post_thumbnail('small');  /*******  IMAGE  *******/ ?>
+                <a href=" <?php echo $linkSingle ?> " class="call-to-action overlay">
+                    <div class="masque"></div>
+                </a>
+
+                <div class="img"><?php the_post_thumbnail('small'); ?></div>
+
+
             </div>
 
             <div class="text-post-extrait">
+
                 <h3><?php the_title(); ?> </h3>
 
-
+                <a href=" <?php echo $linkSingle ?> " class="call-to-action"></a>
                 
 
-                    <?php get_template_part( 'template-parts/content', 'infoforfaitresume' ); ?>
+                <?php get_template_part( 'template-parts/content', 'infoforfaitresume' ); ?>
 
-                
-
-            <div class="">
-                <?php $linkSingle = esc_url( get_permalink() ); ?>
-                <div class="liens-post">
-                    <a href=" <?php echo $linkSingle ?> " class="call-to-action"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lire la suite</a>
-                </div>
             </div>
         </div>
 
