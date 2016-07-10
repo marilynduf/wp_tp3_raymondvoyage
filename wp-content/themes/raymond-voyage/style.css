@@ -718,12 +718,6 @@ body {
   font-size: 1rem;
   text-decoration: none; }
 
-#masthead {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  padding-bottom: 5rem; }
-
 .article-accueil {
   background-color: #42c0d9; }
 
@@ -758,7 +752,7 @@ h3 {
 
 h4 {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #fff;
   /* ------------- 1. Lignes grahiques (voir détails haut du document) */
   text-align: center;
@@ -782,10 +776,15 @@ h4:after {
 .site-main {
   /* ---------------------------------------- Fin lignes grahiques  */ }
   .site-main h4 {
+    color: #fff;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  .site-main .titre-forfait-vedette {
+    color: #3e3e3e; }
+  .site-main .titre-forfait-vedette:before, .site-main .titre-forfait-vedette:after {
+    background-color: #3e3e3e; }
   .site-main h4:before {
     flex-grow: 1;
     height: 1px;
@@ -855,7 +854,18 @@ li {
 .column {
   flex-direction: column; }
 
-/* STYLE HEADER ***************************************************************/
+/********************************************************
+HEADER
+********************************************************/
+#masthead {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  padding-bottom: 5rem; }
+
+.home {
+  background: url(img/beach.jpg) no-repeat top; }
+
 #site-navigation {
   display: flex;
   align-items: center;
@@ -896,7 +906,7 @@ li {
   left: -0.07rem; }
 
 .main-navigation ul ul {
-  top: 2.3rem; }
+  top: 2.2rem; }
 
 .slogan {
   padding-top: 10rem;
@@ -910,12 +920,6 @@ li {
 
 .lien-forfait {
   padding-bottom: 10rem; }
-
-/********************************************************
-HEADER
-********************************************************/
-.home {
-  background: url(img/beach.jpg) no-repeat top; }
 
 /*******************************************************
 POST EXTRAITS
@@ -1094,11 +1098,14 @@ a:visited {
   text-transform: uppercase;
   margin: 1rem 0.75rem 0; }
 
+.contenu-page {
+  background-color: #fff; }
+
 /* BUTTON **********************************************************/
 .btn {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 1rem auto 0;
   text-align: center;
   padding: 1rem 1.8rem;

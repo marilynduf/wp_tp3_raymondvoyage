@@ -17,12 +17,6 @@ body {
   text-decoration: none;
 }
 
-#masthead{
-  color: $color__text-header;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  padding-bottom: 5rem;
-}
 .article-accueil{
   background-color: $color__background-body;
 }
@@ -62,7 +56,7 @@ h3{
 
 h4 {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: $color__titre-page;
 
   /* ------------- 1. Lignes grahiques (voir détails haut du document) */
@@ -90,11 +84,19 @@ h4:after {
 .site-main{
 
   h4 {
+    color: #fff;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+  }
+  .titre-forfait-vedette{
+    color: #3e3e3e;
+  }
+  .titre-forfait-vedette:before, .titre-forfait-vedette:after{
+    background-color: #3e3e3e;
+  }
+
 
   h4:before {
     flex-grow: 1;
@@ -181,8 +183,18 @@ li{
 }
 
 
-/* STYLE HEADER ***************************************************************/
-
+/********************************************************
+HEADER
+********************************************************/
+#masthead{
+  color: $color__text-header;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  padding-bottom: 5rem;
+}
+.home{
+  background: url(img/beach.jpg) no-repeat top;
+}
 
 #site-navigation{
   display:flex;
@@ -191,8 +203,6 @@ li{
 }
 #primary-menu{
   float: right;
-  //text-align: right;
-  //align-items: center;
 }
 
 #site-navigation{
@@ -244,7 +254,7 @@ li{
   left: -0.07rem;
 }
 .main-navigation ul ul{
-  top: 2.3rem;
+  top: 2.2rem;
 }
 .slogan{
   padding-top: 10rem;
@@ -259,13 +269,7 @@ li{
 .lien-forfait{
   padding-bottom: 10rem;
 }
-/********************************************************
-HEADER
-********************************************************/
 
-.home{
-  background: url(img/beach.jpg) no-repeat top;
-}
 
 /*******************************************************
 POST EXTRAITS
@@ -489,12 +493,15 @@ SINGLE
       margin: 1rem 0.75rem 0 ;
     }
 }
+.contenu-page{
+  background-color: #fff;
+}
 /* BUTTON **********************************************************/
 
 .btn{
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  font-size: 1rem; // Pourquoi 1.5rem (qui = 24px) c'est immmmmense sur mon écran?
+  font-size: 1.1rem;
   margin: 1rem auto 0;
   text-align: center;
   padding: 1rem 1.8rem;

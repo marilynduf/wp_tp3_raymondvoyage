@@ -23,7 +23,7 @@ get_header(); ?>
 
     <section id="main" class="site-main row container" role="main">
 
-        <h4>Forfaits vedettes</h4>
+        <h4 class="titre-forfait-vedette">Forfaits vedettes</h4>
 
         <?php
             $args = array(
