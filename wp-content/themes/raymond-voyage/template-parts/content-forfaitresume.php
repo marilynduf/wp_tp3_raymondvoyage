@@ -12,7 +12,7 @@
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <div class="entry-content post-extrait">
+        <div class="entry-content post-extrait margin-bottom">
             <?php $linkSingle = esc_url( get_permalink() ); ?>
 
             <div class="crop-container-forfait-resume">

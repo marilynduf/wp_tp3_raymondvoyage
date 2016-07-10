@@ -154,8 +154,8 @@ require get_template_directory() . '/inc/jetpack.php';
 /**************************************************************************
 CUSTOM POST TYPE
 **************************************************************************/
+add_image_size( 'frm-forfait', 320, 320, true );
 
-/**************************************************************************/
 $labelsServices = array(
 	'name' => "Forfaits",
 	'singular_name' => "Forfaits",

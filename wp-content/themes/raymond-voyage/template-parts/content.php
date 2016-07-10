@@ -33,10 +33,12 @@
                     <div class="mini-post">   
                         <div class="col s12 m4 l4">
                             <div class="mini-post-info">
+                                <div class="img-container-article">
                                 <?php
                                 the_post_thumbnail('small');  /*******  IMAGE  *******/ ?>
-                                <div class="text-mini-post">
-                                  <p>Date: <?php echo get_the_date(); ?></p>
+                                </div>
+                                <div class="text-mini-post ">
+                                  <p>Date : <?php echo get_the_date(); ?></p>
                                     <span class="infos"> Catégorie(s): </span>
                                     <div class="liens-post">
                                         <?php

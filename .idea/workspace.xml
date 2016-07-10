@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1f2aa113-d1c5-49e2-8e2f-c1067ad029e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/page-accueil.php" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/page-accueil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/_voyage.scss" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/_voyage.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfaitresume.php" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfaitresume.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php" />
     </list>
     <ignored path="wp_tp3_raymondvoyage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,18 +34,50 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-page.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content-page.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="450">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding>
+                <element signature="e#6#160#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-resume.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-resume.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_voyage.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/_voyage.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="337" column="9" selection-start-line="337" selection-start-column="9" selection-end-line="337" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -53,11 +86,11 @@
       <file leaf-file-name="page-accueil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/page-accueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="77">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding>
                 <element signature="e#6#341#0#PHP" expanded="true" />
-                <element signature="e#939#1135#1#PHP" expanded="false" />
+                <element signature="e#962#1158#1#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,51 +108,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_voyage.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/_voyage.scss">
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+            <state relative-caret-position="195">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="38" column="36" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-none.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-none.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-infoforfaitresume.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-infoforfaitresume.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_colors.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/variables-site/_colors.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="239">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -162,22 +165,22 @@
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/single-forfait.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/mixins/_mixins-master.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-infoforfaitresume.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfait.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/sidebar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfaitresume.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-resume.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/archive-forfait.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/variables-site/_colors.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/page-accueil.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfaitresume.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/_voyage.scss" />
       </list>
     </option>
@@ -194,7 +197,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
     <option name="x" value="112" />
-    <option name="y" value="22" />
+    <option name="y" value="39" />
     <option name="width" value="1312" />
     <option name="height" value="876" />
   </component>
@@ -467,12 +470,12 @@
       <workItem from="1467946414895" duration="1221000" />
       <workItem from="1467948067704" duration="353000" />
       <workItem from="1467948471855" duration="4000" />
-      <workItem from="1467948888176" duration="20692000" />
+      <workItem from="1467948888176" duration="30843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142284000" />
+    <option name="totallyTimeSpent" value="152435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,15 +487,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="112" y="22" width="1312" height="876" extended-state="0" />
+    <frame x="112" y="39" width="1312" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22913386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21338582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.4974359" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34605262" sideWeight="0.510043" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3286908" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32162163" sideWeight="0.44981685" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32105264" sideWeight="0.44981685" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53418803" sideWeight="0.48995695" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -754,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -786,57 +781,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfaitresume.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/single-forfait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <element signature="e#6#182#0#PHP" expanded="true" />
+            <element signature="e#6#182#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-resume.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,14 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -880,27 +823,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/variables-site/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/page-accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding>
+            <element signature="e#6#341#0#PHP" expanded="true" />
+            <element signature="e#962#1158#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfaitresume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#6#141#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -914,22 +870,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/page-accueil.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="40" />
-          <folding>
-            <element signature="e#6#341#0#PHP" expanded="true" />
-            <element signature="e#939#1135#1#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-forfait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-resume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/sass/_voyage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+        <state relative-caret-position="222">
+          <caret line="337" column="9" selection-start-line="337" selection-start-column="9" selection-end-line="337" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/raymond-voyage/template-parts/content-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#160#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

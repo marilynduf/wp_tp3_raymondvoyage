@@ -17,11 +17,11 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area header">
 
     <!-- LOOP FORFAITS VEDETTES ------------------------------------------------------------------------>
 
-    <section id="main" class="site-main row container" role="main">
+    <section id="main" class="site-main row container articles-recent" role="main">
 
         <h4 class="titre-forfait-vedette">Forfaits vedettes</h4>
 
