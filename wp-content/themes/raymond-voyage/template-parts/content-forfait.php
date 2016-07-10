@@ -46,7 +46,7 @@
 
         <div class="text-article">
             <div class="col s12 m6 l6">
-                <div class="text-article-info">
+                <div class="titre-info-forfait">
                     
                     <h5>Détails</h5>
                     <?php get_template_part( 'template-parts/content', 'infoforfaitresume' ); ?>

@@ -935,6 +935,9 @@ HEADER
 .lien-forfait {
   padding-bottom: 5rem; }
 
+.articles-recent {
+  padding-bottom: 2.5rem; }
+
 /*******************************************************
 POST EXTRAITS
 ********************************************************/
@@ -980,7 +983,6 @@ POST EXTRAITS
 LIENS
 ********************************************************/
 .liens-post {
-  margin-top: 0.4rem;
   color: #2897aa; }
   .liens-post a {
     color: #2897aa;
@@ -1012,7 +1014,7 @@ footer {
 
 .background {
   /* erreur comme s'il trouvait pas le chemin mais tout s'affiche quand meme... pk? pcq PHP storm ne "catch" pas mais c'est ok */
-  background: #0a5664 url("img/terre.png") no-repeat center;
+  background: #06343c url("img/terre.png") no-repeat center;
   padding: 1.6rem 0; }
 
 .nous-joindre a {
@@ -1117,16 +1119,29 @@ SINGLE
     .mini-post .mini-post-info .text-mini-post span {
       padding-bottom: 0.7rem; }
 
-.text-article .text-article-info {
+/* Single article **********************************/
+.text-article-info {
   background-color: #fff;
   padding: 2.5rem; }
-  .text-article .text-article-info p:first-child {
+  .text-article-info p:first-child {
     margin-top: 1.5rem; }
-  .text-article .text-article-info .row {
+  .text-article-info .row {
     margin-left: 0;
     margin-right: 0; }
-  .text-article .text-article-info h5 {
+  .text-article-info h5 {
     margin-bottom: 1.5rem; }
+
+/* Single forfait **********************************/
+.titre-info-forfait {
+  background-color: #fff;
+  padding: 2.5rem; }
+  .titre-info-forfait h5 {
+    margin-bottom: 0.5rem; }
+  .titre-info-forfait p {
+    margin-top: 0.7rem; }
+  .titre-info-forfait .row {
+    margin-left: 0;
+    margin-right: 0; }
 
 .center {
   text-align: center; }
@@ -1143,6 +1158,7 @@ a:visited {
   margin: 0.5rem 0.75rem 1.2rem; }
 
 .contenu-page {
+  padding: 5.6rem;
   background-color: #fff; }
 
 /* BUTTON **********************************************************/

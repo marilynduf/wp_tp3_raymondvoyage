@@ -48,7 +48,7 @@ get_header(); ?>
 
     <section id="article-recent" >
 
-        <div class="site-main row container" role="main">
+        <div class="site-main row container article-accueil" role="main">
 
             <h4>Derniers articles</h4>
 

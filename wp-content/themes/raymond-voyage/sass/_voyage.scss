@@ -281,8 +281,9 @@ HEADER
 .lien-forfait{
   padding-bottom: 5rem;
 }
-
-
+.articles-recent{
+  padding-bottom: 2.5rem;
+}
 /*******************************************************
 POST EXTRAITS
 ********************************************************/
@@ -336,7 +337,6 @@ POST EXTRAITS
 LIENS
 ********************************************************/
 .liens-post{
-  margin-top: 0.4rem;
   color: $color__icons-et-liens;
   a{
     color: $color__icons-et-liens;
@@ -398,7 +398,6 @@ footer{
   }
 }
 /* FORFAITS *******************************************************/
-
 .crop-container{ /* ------- Style gestion image forfait */
   height: 0;
   padding-bottom: 66.66%;
@@ -506,7 +505,9 @@ SINGLE
     }
   }
 }
-.text-article{
+
+
+/* Single article **********************************/
 
   .text-article-info{
     background-color: $color__fond-carte;
@@ -521,6 +522,22 @@ SINGLE
     h5{
       margin-bottom: 1.5rem;
     }
+  }
+
+/* Single forfait **********************************/
+
+.titre-info-forfait{
+  background-color: $color__fond-carte;
+  padding: 2.5rem;
+  h5 {
+    margin-bottom: 0.5rem;
+  }
+  p{
+    margin-top: 0.7rem;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .center {
@@ -542,6 +559,7 @@ SINGLE
     }
 }
 .contenu-page{
+  padding: 5.6rem;
   background-color: #fff;
 }
 /* BUTTON **********************************************************/

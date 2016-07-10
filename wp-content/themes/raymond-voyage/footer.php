@@ -35,7 +35,7 @@
                             endif; ?>
                         </div><!-- .site-branding -->
 
-                        <p class="credit">Fait par: <span>Marilyn Dufour<span></p>
+                        <p class="credit">Fait par : <span>Marilyn Dufour<span></p>
                         <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'raymond-voyage' ), 'raymond-voyage'); ?>
                     </div><!-- .site-info -->
 

@@ -11,10 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="entry-title "">', '</h2>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content contenu-page">
 		<?php
 			the_content();
 		?>
@@ -27,10 +27,8 @@
 				sprintf(
 					/* translators: %s: Name of current post */
 					esc_html__( 'Edit %s', 'raymond-voyage' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
+					the_title( '<span class="screen-reader-text >"', '"</span>', false )
+				)
 			);
 		?>
 	</footer><!-- .entry-footer -->
