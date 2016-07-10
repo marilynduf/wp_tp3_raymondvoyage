@@ -15,19 +15,19 @@
 
             <div class="entry-content post-extrait">
 
-
+                    <?php $linkSingle = esc_url( get_permalink() ); ?>
                         <div class="date">
                             <?php echo get_the_date(); ?>
                         </div >
                         <div class="crop-container">
-                            <?php the_post_thumbnail('large');  /*******  IMAGE  *******/ ?>
+                            <a href=" <?php echo $linkSingle ?>" > <?php the_post_thumbnail('large'); ?> </a>
                         </div>
                         <div class="text-post-extrait">
-                            <h3><?php the_title(); ?> </h3>
+                            <a href=" <?php echo $linkSingle ?>" ><h3><?php the_title(); ?> </h3></a>
                             <?php the_excerpt(); ?>
                         </div>
                         <div class="ligne">
-                            <?php $linkSingle = esc_url( get_permalink() ); ?>
+
                             <div class="liens-post">
                                 <a href=" <?php echo $linkSingle ?> " class="call-to-action"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lire la suite</a>
                             </div>

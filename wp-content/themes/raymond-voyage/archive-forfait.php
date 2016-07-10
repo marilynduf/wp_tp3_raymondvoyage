@@ -19,7 +19,7 @@ get_header(); ?>
                 <header class="page-header">
                     <?php
 
-                    the_archive_description( '<div class="taxonomy-description">', '</div>' );
+                    the_archive_description( '<h3 class="taxonomy-description">', '</h3>' );
                     ?>
                 </header><!-- .page-header -->
 
@@ -46,8 +46,12 @@ get_header(); ?>
             endif; ?>
 
         </main><!-- #main -->
+        <div>
+            <button>Forfaits plus anciens</button>
+            <button>Forfaits plus recents</button>
+        </div>
     </div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

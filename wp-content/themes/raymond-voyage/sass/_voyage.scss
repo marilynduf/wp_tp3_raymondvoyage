@@ -55,7 +55,7 @@ h2:after {
 
 h3{
   font-size: 1.4rem;
-  margin-top: 0; /* h3 : titre des extraits de posts */
+  margin-top: 0; /* h3 : titre des extraits d'articles */
   margin-bottom: 0.5rem;
 }
 
@@ -284,7 +284,19 @@ POST EXTRAITS
       background-color: rgba(0, 0, 0, 0.5)
     }
     .text-post-extrait{
-      padding: 1rem 1.8rem 0 1.8rem;
+      padding: 1rem 1.8rem 1.8rem 1.8rem;
+      .row{
+        margin: 0;
+      }
+      a{
+        font-family: 'Montserrat';
+        color: $color__titre-forfaits;
+        text-transform:none;
+          font-size: 1.4rem;
+          margin-top: 0; /* h3 : titre des extraits de posts */
+          margin-bottom: 0.5rem;
+          text-decoration: none;
+      }
     }
 }
 .ligne{
@@ -359,7 +371,7 @@ footer{
 }
 .crop-container-forfait-resume{
   height: 0;
-  padding-bottom: 63%;
+  padding-bottom: 61%;
   overflow: hidden;
   position: relative;
 } /* ------------------ Fin Style gestion image forfait */
@@ -467,6 +479,16 @@ SINGLE
   a:visited{
     color: $color__text-button-forfait;
   }
+
+.categorie{
+
+    h6 {
+      color: $color__titre-categories;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin: 1rem 0.75rem 0 ;
+    }
+}
 /* BUTTON **********************************************************/
 
 .btn{

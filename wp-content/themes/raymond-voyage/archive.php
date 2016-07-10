@@ -9,16 +9,16 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area container categorie">
 		<h2><span>Blogue</span></h2>
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main row" role="main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h6 class="page-title">', '</h6>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -48,5 +48,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

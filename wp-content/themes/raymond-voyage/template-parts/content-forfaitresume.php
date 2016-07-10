@@ -27,20 +27,19 @@
 
             <div class="text-post-extrait">
 
-                <h3><?php the_title(); ?> </h3>
+               <a href="<?php echo $linkSingle ?>"> <?php the_title(); ?> </a>
 
                 <a href=" <?php echo $linkSingle ?> " class="call-to-action"></a>
                 
 
                 <?php get_template_part( 'template-parts/content', 'infoforfaitresume' ); ?>
 
+
             </div>
+
         </div>
 
 
-        <footer class="entry-footer">
-            <?php //raymond_voyage_entry_footer(); ?>
-        </footer><!-- .entry-footer -->
 
     </article><!-- #post-## -->
 

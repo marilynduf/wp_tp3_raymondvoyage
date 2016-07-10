@@ -753,7 +753,7 @@ h2:after {
 h3 {
   font-size: 1.4rem;
   margin-top: 0;
-  /* h3 : titre des extraits de posts */
+  /* h3 : titre des extraits d'articles */
   margin-bottom: 0.5rem; }
 
 h4 {
@@ -931,7 +931,18 @@ POST EXTRAITS
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5); }
   .post-extrait .text-post-extrait {
-    padding: 1rem 1.8rem 0 1.8rem; }
+    padding: 1rem 1.8rem 1.8rem 1.8rem; }
+    .post-extrait .text-post-extrait .row {
+      margin: 0; }
+    .post-extrait .text-post-extrait a {
+      font-family: 'Montserrat';
+      color: #3e3e3e;
+      text-transform: none;
+      font-size: 1.4rem;
+      margin-top: 0;
+      /* h3 : titre des extraits de posts */
+      margin-bottom: 0.5rem;
+      text-decoration: none; }
 
 .ligne {
   border-top: solid #b7b7b7 0.1rem;
@@ -995,7 +1006,7 @@ footer {
 
 .crop-container-forfait-resume {
   height: 0;
-  padding-bottom: 63%;
+  padding-bottom: 61%;
   overflow: hidden;
   position: relative; }
 
@@ -1076,6 +1087,12 @@ SINGLE
 
 a:visited {
   color: #094d59; }
+
+.categorie h6 {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem 0.75rem 0; }
 
 /* BUTTON **********************************************************/
 .btn {

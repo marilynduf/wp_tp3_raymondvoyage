@@ -36,7 +36,7 @@
                                 <?php
                                 the_post_thumbnail('small');  /*******  IMAGE  *******/ ?>
                                 <div class="text-mini-post">
-                                  <p>Date: <?php  the_date(); ?></p>
+                                  <p>Date: <?php echo get_the_date(); ?></p>
                                     <span class="infos"> Catégorie(s): </span>
                                     <div class="liens-post">
                                         <?php
